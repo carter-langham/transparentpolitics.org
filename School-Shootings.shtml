@@ -145,50 +145,67 @@
                                     {data: 'Date'},
                                     {data: 'Location: Institution'},
                                     {data: 'Case ID'},
+                                    /*
                                     {data: 'Time Started'},
                                     {data: 'Time Ended'},
                                     {data: 'Duration'},	
+                                    */
                                     {data: 'Gender'},	
+                                    /*
                                     {data: 'DOB'},	
                                     {data: 'Alive'},	
                                     {data: 'DOD'},	
                                     {data: 'Age of Shooter'},	
+                                    */
                                     {data: 'Age At Shooting'},
+                                    /*
                                     {data: 'Background'},
+                                    */
                                     {data: 'Race/Ethic Group of Shooter'},	
                                     {data: 'Prior Criminal History'},
                                     {data: 'History of Violence/Threats'},
+                                    /*
                                     {data: 'Additional Information'},
+                                    */
                                     {data: 'Attended School'},
                                     {data: 'Mental Health Issues'},
                                     {data: 'Motive'},
+                                    /*
                                     {data: 'Outfit'},
                                     {data: 'Obsession with Past Massacres'},
+                                    */
                                     {data: 'Military Status'},
+                                    /*
                                     {data: 'Abused'},
                                     {data: 'Adopted'},
                                     {data: 'Parents Alive'},
                                     {data: 'Parents Divorced'},
                                     {data: 'Relationship Status'},
+                                    */
                                     {data: 'Shooting Outcome'},
+                                    /*
                                     {data: 'Final Plea'},
                                     {data: 'Status of Shooter'},
                                     {data: 'Charges'},
                                     {data: 'Verdict'},
                                     {data: 'Sentence'},
                                     {data: 'Manifesto/Note'},
+                                    */
                                     {data: 'Weapon Lawfully Obtained'},
                                     {data: 'Firearm Type'},
+                                    /*
                                     {data: 'Firearm Brand'},
                                     {data: 'Firearm Caliber'},
                                     {data: 'Capacity'},
                                     {data: 'Attachments/Alterations/Other Weapons'},
+                                    */
                                     {data: 'Location: State'},
                                     {data: 'Location: City'},
-                                    {data: 'Location: Area'},
+                                    //{data: 'Location: Area'},
                                     {data: 'Education Level'},
-                                    {data: 'Private or Public'},
-                                    {data: 'Victims'},
+                                    //{data: 'Private or Public'},
+                                    
+                                    //{data: 'Victims'},
                                     {data: '# Killed'},
                                     {data: '# Injured'},
                                 ]
