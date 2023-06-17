@@ -68,29 +68,29 @@
                     </table>
                 </div>
                 <script>
-                    // Function to format the details to be displayed when a row is clicked
+                    //gives more info when clicking on entry
                     function formatDetails ( d ) {
                         return '<strong>Description:</strong><br>' + d.Description +
-                        '<br><strong></strong><br><a href="' + d['Bill Text'] + '" target="_blank">Link to Bill Text</a>' +
-                        '<br><strong>Case ID:</strong><br><a href="' + d['Case ID'] +
-                        '<br><strong>Time Started:</strong><br><a href="' + d['Time Started'] + 
-                        '<br><strong>Time Ended:</strong><br><a href="' + d['Time Ended'] +
-                        '<br><strong>Duration:</strong><br><a href="' + d['Duration'] +
-                        '<br><strong>Date of Birth:</strong><br><a href="' + d['DOB'] +
-                        '<br><strong>Alive:</strong><br><a href="' + d['Alive'] +
-                        '<br><strong>Date of Death:</strong><br><a href="' + d['DOD'] +
-                        '<br><strong>Background:</strong><br><a href="' + d['Background'] +
-                        '<br><strong>Prior Criminal History:</strong><br><a href="' + d['Prior Criminal History'] +
-                        '<br><strong>History of Violence/Threats:</strong><br><a href="' + d['History of Violence/Threats'] +
-                        '<br><strong>Additional Information:</strong><br><a href="' + d['Additional Information'] +
-                        '<br><strong>Attended School:</strong><br><a href="' + d['Attended School'] +
-                        '<br><strong>Mental Health Issues:</strong><br><a href="' + d['Mental Health Issues'] +
-                        '<br><strong>Motive:</strong><br><a href="' + d['Motive'] +
-                        '<br><strong>Obsession with Past Massacres:</strong><br><a href="' + d['Obsession with Past Massacres'] +
-                        '<br><strong>Military Status:</strong><br><a href="' + d['Military Status'] +
-                        '<br><strong>Status of Shooter:</strong><br><a href="' + d['Status of Shooter'] +
-                        '<br><strong>Manifesto/Note:</strong><br><a href="' + d['Manifesto/Note'] +
-                        '<br><strong>Victims:</strong><br><a href="' + d['Victims'];
+                        '<br><strong>Bill Text:</strong><br><a href="' + d['Bill Text'] + '" target="_blank">Link to Bill Text</a>' +
+                        '<br><strong>Case ID:</strong><br>' + d['Case ID'] +
+                        '<br><strong>Time Started:</strong><br>' + d['Time Started'] +
+                        '<br><strong>Time Ended:</strong><br>' + d['Time Ended'] +
+                        '<br><strong>Duration:</strong><br>' + d['Duration'] +
+                        '<br><strong>Date of Birth:</strong><br>' + d['DOB'] +
+                        '<br><strong>Alive:</strong><br>' + d['Alive'] +
+                        '<br><strong>Date of Death:</strong><br>' + d['DOD'] +
+                        '<br><strong>Background:</strong><br>' + d['Background'] +
+                        '<br><strong>Prior Criminal History:</strong><br>' + d['Prior Criminal History'] +
+                        '<br><strong>History of Violence/Threats:</strong><br>' + d['History of Violence/Threats'] +
+                        '<br><strong>Additional Information:</strong><br>' + d['Additional Information'] +
+                        '<br><strong>Attended School:</strong><br>' + d['Attended School'] +
+                        '<br><strong>Mental Health Issues:</strong><br>' + d['Mental Health Issues'] +
+                        '<br><strong>Motive:</strong><br>' + d['Motive'] +
+                        '<br><strong>Obsession with Past Massacres:</strong><br>' + d['Obsession with Past Massacres'] +
+                        '<br><strong>Military Status:</strong><br>' + d['Military Status'] +
+                        '<br><strong>Status of Shooter:</strong><br>' + d['Status of Shooter'] +
+                        '<br><strong>Manifesto/Note:</strong><br>' + d['Manifesto/Note'] +
+                        '<br><strong>Victims:</strong><br>' + d['Victims'];
                     }
 
                     $.ajax({
