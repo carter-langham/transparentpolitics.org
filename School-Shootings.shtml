@@ -49,16 +49,14 @@
                 <table id="table_id" class="display">
                     <thead>
                         <tr>
+                            <th>Data</th>
                             <th>Location: Institution</th>
                             <th>Case ID</th>
                             <th>Gender</th>
                             <th>Age At Shooting</th>
                             <th>Race/Ethic Group of Shooter</th>
-                            <th>Prior Criminal History</th>
-                            <th>History of Violence/Threats</th>
                             <th>Attended School</th>
                             <th>Mental Health Issues</th>
-                            <th>Motive</th>
                             <th>Military Status</th>
                             <th>Shooting Outcome</th>
                             <th>Weapon Lawfully Obtained</th>
@@ -177,14 +175,14 @@
                                     {data: 'Background'},
                                     */
                                     {data: 'Race/Ethic Group of Shooter'},	
-                                    {data: 'Prior Criminal History'},
-                                    {data: 'History of Violence/Threats'},
+                                    //{data: 'Prior Criminal History'},
+                                    //{data: 'History of Violence/Threats'},
                                     /*
                                     {data: 'Additional Information'},
                                     */
                                     {data: 'Attended School'},
                                     {data: 'Mental Health Issues'},
-                                    {data: 'Motive'},
+                                    //{data: 'Motive'},
                                     /*
                                     {data: 'Outfit'},
                                     {data: 'Obsession with Past Massacres'},
