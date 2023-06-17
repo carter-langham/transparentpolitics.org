@@ -147,7 +147,7 @@
 
                             // Declare and initialise the table inside the success callback
                             let table = $('#table_id').DataTable({
-                                responsive: true,
+                                //responsive: true,
                                 data: data,
                                 pageLength: 25,
                                 columns: [
