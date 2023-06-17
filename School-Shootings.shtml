@@ -70,9 +70,9 @@
                 <script>
                     //gives more info when clicking on entry
                     function formatDetails ( d ) {
-                        return '<strong>Description:</strong><br>' + d.Description +
-                        '<br><strong>Case ID:</strong><br>' + d.Description +
-                        '<br><strong>Time Started:</strong><br>' + d.Description;
+                        return '<strong>Description:</strong><br>' + d.Description;
+                        // '<br><strong>Case ID:</strong><br>' + d.Description +
+                        // '<br><strong>Time Started:</strong><br>' + d.Description;
                         /*'<br><strong>Time Ended:</strong><br>' + d['Time Ended'] +
                         '<br><strong>Duration:</strong><br>' + d['Duration'] +
                         '<br><strong>Date of Birth:</strong><br>' + d['DOB'] +
@@ -195,6 +195,10 @@
                                     row.child(formatDetails(row.data())).show();
                                     tr.addClass('shown');
                                 }
+                            });
+
+                            $('#table_id tbody').on('click', 'a', function(event) {
+                                event.stopPropagation();
                             });
                         }
                     });
