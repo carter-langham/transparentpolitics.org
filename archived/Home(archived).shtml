@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    
+        <link rel="stylesheet" href="dataTables.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="table.css">
+    <link rel="icon" href="images/favicon.svg">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Transparent Politics"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <script>
+    function gdprConfirmed() {
+        return true;
+    }
+    function dynamicLoadScript(src) {
+        var script = document.createElement('script');
+        script.src = src && typeof src === 'string' ? src : 'https://www.google.com/recaptcha/api.js?render=6LeYR10mAAAAANnetC4eSBcvnISb-gcSObNMg8MX';
+        script.async = true;
+        document.body.appendChild(script);
+        script.onload = function() {
+            let event = new CustomEvent("recaptchaLoaded");
+            document.dispatchEvent(event);
+        };
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        var confirmButton = document.querySelector('.u-cookies-consent .u-button-confirm');
+        if (confirmButton) {
+            confirmButton.onclick = dynamicLoadScript;
+        }
+    });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            if (!gdprConfirmed()) {
+                return;
+            }
+            dynamicLoadScript('https://www.google.com/recaptcha/enterprise.js?render=6LeYR10mAAAAANnetC4eSBcvnISb-gcSObNMg8MX');
+        });
+    </script>
+    <script>
+        document.addEventListener("recaptchaLoaded", function() {
+            if (!gdprConfirmed()) {
+                return;
+            }
+            (function (grecaptcha, sitekey, actions) {
+                var recaptcha = {
+                    execute: function (action, submitFormCb) {
+                        try {
+                            grecaptcha.execute(
+                                sitekey,
+                                {action: action}
+                            ).then(function (token) {
+                                var forms = document.getElementsByTagName('form');
+
+                                for (var i = 0; i < forms.length; i++) {
+                                    var fields = forms[i].getElementsByTagName('input');
+
+                                    for (var j = 0; j < fields.length; j++) {
+                                        var field = fields[j];
+
+                                        if ('recaptchaResponse' === field.getAttribute('name')) {
+                                            field.setAttribute('value', token);
+                                            break;
+                                        }
+                                    }
+                                }
+                                submitFormCb();
+                            });
+                        } catch (e) {
+                            var formError = document.querySelector('.u-form-send-error');
+
+                            if (formError) {
+                                formError.innerText = 'Site Owner Error: ' + e.message.replace(/:[\s\S]*/, '');
+                                formError.style.display = 'block';
+                            }
+                        }
+                    },
+
+                    executeContact: function (submitFormCb) {
+                        recaptcha.execute(actions['contact'], submitFormCb);
+                    }
+                };
+
+                window.recaptchaObject = recaptcha;
+            })(
+                
+                grecaptcha.enterprise,
+                '6LeYR10mAAAAANnetC4eSBcvnISb-gcSObNMg8MX',
+                {'contact': 'contact'}
+            );
+        });
+    </script>
+<meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class=" u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-header u-section-row-container" id="sec-b23c" style=""><div class="u-section-rows">
+        <div class="u-border-2 u-border-custom-color-2 u-border-no-bottom u-clearfix u-custom-color-2 u-section-row" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-25d8">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <img class="u-image u-preserve-proportions u-image-1" src="transparentpolitics.png" alt="" data-image-width="150" data-image-height="150" data-href="Home.shtml">
+            <h1 class="u-custom-font u-font-courier-new u-text u-title u-text-1">Transparent Politics <br>
+            </h1>
+          </div>
+          
+          
+          
+          
+          
+        </div>
+        <div class="u-border-2 u-border-custom-color-2 u-border-no-top u-custom-color-2 u-section-row u-section-row-2" id="sec-c5d7">
+          <div class="u-clearfix u-sheet u-valign-middle u-sheet-2">
+            <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="MD">
+              <div class="menu-collapse" style="font-weight: 700;">
+                <a class="u-button-style u-custom-color u-custom-hover-color u-custom-text-color u-custom-text-decoration u-nav-link u-text-white" href="#" style="padding: 13px 10px; font-size: calc(1em + 26px);">
+                  <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-dd0e"></use></svg>
+                  <svg class="u-svg-content" version="1.1" id="svg-dd0e" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+                </a>
+              </div>
+              <div class="u-custom-menu u-nav-container">
+                <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-hover-custom-color-3 u-nav-link u-text-body-alt-color" href="Home.shtml" style="padding: 10px 18px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-hover-custom-color-3 u-nav-link u-text-body-alt-color" href="Anti-Trans-Legislation.shtml" style="padding: 10px 18px;">Anti-Trans Legislation</a>
+</li><li class="u-nav-item"><a class="u-button-style u-hover-custom-color-3 u-nav-link u-text-body-alt-color" href="School-Shootings.shtml" style="padding: 10px 18px;">School Shootings</a>
+</li><li class="u-nav-item"><a class="u-button-style u-hover-custom-color-3 u-nav-link u-text-body-alt-color" href="Harrassment-and-Assault-Cases.shtml" style="padding: 10px 18px;">Harrassment and Assault Cases</a>
+</li><li class="u-nav-item"><a class="u-button-style u-hover-custom-color-3 u-nav-link u-text-body-alt-color" href="Congress-Donations.shtml" style="padding: 10px 11px 10px 18px;">Congress Donations</a>
+</li></ul>
+              </div>
+              <div class="u-custom-menu u-nav-container-collapse">
+                <div class="u-black u-container-style u-inner-container-layout u-sidenav u-sidenav-1" data-offcanvas-width="277.7779">
+                  <div class="u-inner-container-layout u-sidenav-overflow" style="padding: 0px 0px 675px;">
+                    <div class="u-menu-close"></div>
+                    <ul class="u-align-center u-custom-font u-font-georgia u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.shtml">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Anti-Trans-Legislation.shtml">Anti-Trans Legislation</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="School-Shootings.shtml">School Shootings</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Harrassment-and-Assault-Cases.shtml">Harrassment and Assault Cases</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Congress-Donations.shtml">Congress Donations</a>
+</li></ul>
+                  </div>
+                </div>
+                <div class="u-menu-overlay"></div>
+              </div>
+            </nav>
+          </div>
+          
+          
+          
+          
+          
+        </div>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-73e3">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-custom-font u-font-georgia u-subtitle u-text u-text-1">What is Transparent Politics?</h2>
+        <p class="u-text u-text-2">This website's main purpose is to spread reliable information about sociopolitcal and economic issues in the United States. At the moment, Transparent Politics is going to be used to track <a href="Anti-Trans-Legislation.shtml" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">anti-trans legislation</a>, <a href="School-Shootings.shtml" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">school shootings</a>, <a href="Harrassment-and-Assault-Cases.shtml" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">sexual assault</a> committed by church/government officials, and highlight the path of <a href="Congress-Donations.shtml" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">congress donations</a>. The data presented on this website will have sources and be properly audited for accuracy unless otherwise stated. If you have any feedback (ideas, ​criticism, etc) please fill out the form below.
+        </p>
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <h1 class="u-text u-title u-text-3" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">400+</h1>
+                <p class="u-text u-text-4">Anti-Trans Bills Since the Start of 2023</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <h1 class="u-text u-title u-text-5" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">80+</h1>
+                <p class="u-text u-text-6">School Shootings Since the Start of 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-form u-form-1">
+          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="gsheets" name="form" style="padding: 10px;">
+            <div class="u-form-group u-form-name">
+              <label for="name-a8e1" class="u-custom-font u-font-georgia u-label">Name</label>
+              <input type="text" placeholder="Enter your Name" id="name-a8e1" name="name" class="u-custom-font u-font-georgia u-input u-input-rectangle" required="">
+            </div>
+            <div class="u-form-email u-form-group">
+              <label for="email-a8e1" class="u-custom-font u-font-georgia u-label">Email</label>
+              <input type="email" placeholder="Enter a valid email address" id="email-a8e1" name="email" class="u-custom-font u-font-georgia u-input u-input-rectangle" required="">
+            </div>
+            <div class="u-form-group u-form-message">
+              <label for="message-a8e1" class="u-custom-font u-font-georgia u-label">Message</label>
+              <textarea placeholder="Enter your message" rows="4" cols="50" id="message-a8e1" name="message" class="u-custom-font u-font-georgia u-input u-input-rectangle" required=""></textarea>
+            </div>
+            <div class="u-align-left u-form-group u-form-submit">
+              <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-custom-color-2 u-custom-font u-font-georgia u-radius-2 u-btn-5">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
+            <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try again.</div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="7d32b6e5-41bd-4659-bb2b-f1959a3eef0a">
+            <input type="hidden" name="siteKey" value="6LeYR10mAAAAANnetC4eSBcvnISb-gcSObNMg8MX">
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-custom-color-2 u-footer u-footer" id="sec-956d"><div class="u-clearfix u-sheet u-sheet-1"></div></footer>
+  
+</body></html>

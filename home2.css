@@ -1,0 +1,48 @@
+.grid-container {
+  display: grid;
+  padding: 5px;
+  margin: 10px;
+  grid-template-columns: 1fr 1fr 1fr; /* Creates two columns; the second column is twice as wide as the first */
+  grid-template-rows: 1fr;
+}
+
+.grid-item {
+  background-color: #ededed;
+  border: 1px solid #ededed;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.content {
+    flex: 1 0 auto;  /* Grow and shrink, basis of 0 - this pushes the footer down */
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;  
+    min-height: 100vh;  
+}
+
+
+#heading{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 35px;
+    weight: 200%;
+}
+
+#info_blurb{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
