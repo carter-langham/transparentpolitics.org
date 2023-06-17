@@ -7,6 +7,11 @@ table.dataTable {
     border-spacing: 0
 }
 
+.scrollable-table {
+    overflow-x: auto !important;
+    width: 100% !important;
+}
+
 table.dataTable thead th,
 table.dataTable tfoot th {
     font-weight: bold
