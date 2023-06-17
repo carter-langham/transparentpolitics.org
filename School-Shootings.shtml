@@ -46,29 +46,31 @@
         <section class="table_section">
             <div>
                 <h2 id="page_subheading">School Shootings</h2>
-                <table id="table_id" class="display">
-                    <thead>
-                        <tr>
-                            <th>Data</th>
-                            <th>Location: Institution</th>
-                            <th>Case ID</th>
-                            <th>Gender</th>
-                            <th>Age At Shooting</th>
-                            <th>Race/Ethic Group of Shooter</th>
-                            <th>Attended School</th>
-                            <th>Mental Health Issues</th>
-                            <th>Military Status</th>
-                            <th>Shooting Outcome</th>
-                            <th>Weapon Lawfully Obtained</th>
-                            <th>Firearm Type</th>
-                            <th>Location: State</th>
-                            <th>Location: City</th>
-                            <th>Education Level</th>
-                            <th># Killed</th>
-                            <th># Injured</th>
-                        </tr>
-                    </thead>
-                </table>
+                <div class="scrollable-table">
+                    <table id="table_id" class="display">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Location: Institution</th>
+                                <th>Case ID</th>
+                                <th>Gender</th>
+                                <th>Age At Shooting</th>
+                                <th>Race/Ethic Group of Shooter</th>
+                                <th>Attended School</th>
+                                <th>Mental Health Issues</th>
+                                <th>Military Status</th>
+                                <th>Shooting Outcome</th>
+                                <th>Weapon Lawfully Obtained</th>
+                                <th>Firearm Type</th>
+                                <th>Location: State</th>
+                                <th>Location: City</th>
+                                <th>Education Level</th>
+                                <th># Killed</th>
+                                <th># Injured</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
                 <script>
                     // Function to format the details to be displayed when a row is clicked
                     function formatDetails ( d ) {
