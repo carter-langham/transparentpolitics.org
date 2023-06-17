@@ -52,7 +52,6 @@
                             <tr>
                                 <th>Data</th>
                                 <th>Location: Institution</th>
-                                <th>Case ID</th>
                                 <th>Gender</th>
                                 <th>Age At Shooting</th>
                                 <th>Race/Ethic Group of Shooter</th>
@@ -159,7 +158,7 @@
                                     */
                                     {data: 'Date'},
                                     {data: 'Location: Institution'},
-                                    {data: 'Case ID'},
+                                    //{data: 'Case ID'},
                                     /*
                                     {data: 'Time Started'},
                                     {data: 'Time Ended'},
