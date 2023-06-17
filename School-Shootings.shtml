@@ -53,9 +53,8 @@
                                 <th>Date</th>
                                 <th>Institution</th>
                                 <th>Gender</th>
-                                <th>Age At Shooting</th>
+                                <th>Age</th>
                                 <th>Race/Ethic Group</th>
-                                <th>Military Status</th>
                                 <th>Shooting Outcome</th>
                                 <th>Weapon Lawfully Obtained</th>
                                 <th>Firearm Type</th>
@@ -71,7 +70,29 @@
                 <script>
                     // Function to format the details to be displayed when a row is clicked
                     function formatDetails ( d ) {
-                        return '<strong>Description:</strong><br>' + d.Description;
+                        return '<strong>Description:</strong><br>' + d.Description +
+                        '<br><strong></strong><br><a href="' + d['Bill Text'] + '" target="_blank">Link to Bill Text</a>' +
+                        '<br><string></strong><br><a href="' + d['Case ID'] +
+                        '<br><string></strong><br><a href="' + d['Time Started'] + 
+                        '<br><string></strong><br><a href="' + d['Time Ended'] +
+                        '<br><string></strong><br><a href="' + d['Duration'] +
+                        '<br><string></strong><br><a href="' + d['DOB'] +
+                        '<br><string></strong><br><a href="' + d['Alive'] +
+                        '<br><string></strong><br><a href="' + d['DOD'] +
+                        '<br><string></strong><br><a href="' + d['Background'] +
+                        '<br><string></strong><br><a href="' + d['Prior Criminal History'] +
+                        '<br><string></strong><br><a href="' + d['History of Violence/Threats'] +
+                        '<br><string></strong><br><a href="' + d['Additional Information'] +
+                        '<br><string></strong><br><a href="' + d['Attended School'] +
+                        '<br><string></strong><br><a href="' + d['Mental Health Issues'] +
+                        '<br><string></strong><br><a href="' + d['Motive'] +
+                        '<br><string></strong><br><a href="' + d['Obsession with Past Massacres'] +
+                        '<br><string></strong><br><a href="' + d['Military Status'] +
+                        '<br><string></strong><br><a href="' + d['Status of Shooter'] +
+                        '<br><string></strong><br><a href="' + d['Manifesto/Note'] +
+                        '<br><string></strong><br><a href="' + d['Victims'];
+
+
                     }
 
                     $.ajax({
