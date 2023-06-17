@@ -49,10 +49,25 @@
                 <table id="table_id" class="display">
                     <thead>
                         <tr>
-                            <th>Bill Name</th>
-                            <th>Bill Status</th>
-                            <th>Issue</th>
-                            <th>Location</th>
+                            <th>Location: Institution</th>
+                            <th>Case ID</th>
+                            <th>Gender</th>
+                            <th>Age At Shooting</th>
+                            <th>Race/Ethic Group of Shooter</th>
+                            <th>Prior Criminal History</th>
+                            <th>History of Violence/Threats</th>
+                            <th>Attended School</th>
+                            <th>Mental Health Issues</th>
+                            <th>Motive</th>
+                            <th>Military Status</th>
+                            <th>Shooting Outcome</th>
+                            <th>Weapon Lawfully Obtained</th>
+                            <th>Firearm Type</th>
+                            <th>Location: State</th>
+                            <th>Location: City</th>
+                            <th>Education Level</th>
+                            <th># Killed</th>
+                            <th># Injured</th>
                         </tr>
                     </thead>
                 </table>
