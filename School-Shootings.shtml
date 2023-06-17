@@ -172,9 +172,11 @@
                                     {data: '# Killed'},
                                     {data: '# Injured'},
                                 ],
-                                order: [[0, 'desc']]
+                                order: [[0, 'desc']],
+                                    initComplete: function () {
+                                        this.api().columns.adjust().draw();
+                                },
                             });
-                            table.columns.adjust().draw();
 
                             $('#table_id tbody').on('click', 'tr', function () {
                                 var tr = $(this);
