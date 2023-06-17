@@ -67,8 +67,8 @@
                 <script>
                     // Function to format the details to be displayed when a row is clicked
                     function formatDetails ( d ) {
-                        return '<strong>Description:</strong><br>' + d.Description +
-                        '<br><strong>Date of Birth:</strong><br>' + d.DOB;
+                        return '<strong>Description:</strong><br>' + d.Description + '<br>' +
+                        '<br><strong>Case ID"</strong><br>' + d['Case ID'];
                     }
                     $.ajax({
                         url: "https://transparentpolitics-cd0a1e0a79b7.herokuapp.com/schoolShootings",
