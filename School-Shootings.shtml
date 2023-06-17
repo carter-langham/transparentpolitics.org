@@ -71,7 +71,6 @@
                     //gives more info when clicking on entry
                     function formatDetails ( d ) {
                         return '<strong>Description:</strong><br>' + d.Description +
-                        '<br><strong>Bill Text:</strong><br><a href="' + d['Bill Text'] + '" target="_blank">Link to Bill Text</a>' +
                         '<br><strong>Case ID:</strong><br>' + d['Case ID'] +
                         '<br><strong>Time Started:</strong><br>' + d['Time Started'] +
                         '<br><strong>Time Ended:</strong><br>' + d['Time Ended'] +
@@ -199,6 +198,7 @@
                             });
                         }
                     });
+                    table.columns.adjust().draw();
                 </script>
                 <p id="data_information">
                     *This data is constantly being updated. Cases that are
