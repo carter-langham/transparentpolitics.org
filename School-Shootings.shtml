@@ -55,8 +55,6 @@
                                 <th>Gender</th>
                                 <th>Age At Shooting</th>
                                 <th>Race/Ethic Group of Shooter</th>
-                                <th>Attended School</th>
-                                <th>Mental Health Issues</th>
                                 <th>Military Status</th>
                                 <th>Shooting Outcome</th>
                                 <th>Weapon Lawfully Obtained</th>
@@ -181,8 +179,8 @@
                                     /*
                                     {data: 'Additional Information'},
                                     */
-                                    {data: 'Attended School'},
-                                    {data: 'Mental Health Issues'},
+                                    //{data: 'Attended School'},
+                                    //{data: 'Mental Health Issues'},
                                     //{data: 'Motive'},
                                     /*
                                     {data: 'Outfit'},
