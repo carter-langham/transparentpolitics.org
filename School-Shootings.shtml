@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>School Shootings</title>
-
         <link rel="stylesheet" href="dataTables.css">
         <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="table.css">
@@ -13,13 +12,11 @@
         <link rel="stylesheet" href="headerTemplate.css">
         <link rel="stylesheet" type="text/css"
             href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
-
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script
             src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
         <script
             src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
-
     </head>
     <body>
         <!--#include virtual="headerTemplate.shtml" -->
@@ -53,8 +50,9 @@
                                 <th>Date</th>
                                 <th>Institution</th>
                                 <th>Gender</th>
-                                <th>Age</th>
+                                <th>Age At Shooting</th>
                                 <th>Race/Ethic Group</th>
+                                <th>Military Status</th>
                                 <th>Shooting Outcome</th>
                                 <th>Weapon Lawfully Obtained</th>
                                 <th>Firearm Type</th>
@@ -68,30 +66,10 @@
                     </table>
                 </div>
                 <script>
-                    //gives more info when clicking on entry
+                    // Function to format the details to be displayed when a row is clicked
                     function formatDetails ( d ) {
                         return '<strong>Description:</strong><br>' + d.Description;
-                        // '<br><strong>Case ID:</strong><br>' + d.Description +
-                        // '<br><strong>Time Started:</strong><br>' + d.Description;
-                        /*'<br><strong>Time Ended:</strong><br>' + d['Time Ended'] +
-                        '<br><strong>Duration:</strong><br>' + d['Duration'] +
-                        '<br><strong>Date of Birth:</strong><br>' + d['DOB'] +
-                        '<br><strong>Alive:</strong><br>' + d['Alive'] +
-                        '<br><strong>Date of Death:</strong><br>' + d['DOD'] +
-                        '<br><strong>Background:</strong><br>' + d['Background'] +
-                        '<br><strong>Prior Criminal History:</strong><br>' + d['Prior Criminal History'] +
-                        '<br><strong>History of Violence/Threats:</strong><br>' + d['History of Violence/Threats'] +
-                        '<br><strong>Additional Information:</strong><br>' + d['Additional Information'] +
-                        '<br><strong>Attended School:</strong><br>' + d['Attended School'] +
-                        '<br><strong>Mental Health Issues:</strong><br>' + d['Mental Health Issues'] +
-                        '<br><strong>Motive:</strong><br>' + d['Motive'] +
-                        '<br><strong>Obsession with Past Massacres:</strong><br>' + d['Obsession with Past Massacres'] +
-                        '<br><strong>Military Status:</strong><br>' + d['Military Status'] +
-                        '<br><strong>Status of Shooter:</strong><br>' + d['Status of Shooter'] +
-                        '<br><strong>Manifesto/Note:</strong><br>' + d['Manifesto/Note'] +
-                        '<br><strong>Victims:</strong><br>' + d['Victims'];*/
                     }
-
                     $.ajax({
                         url: "https://transparentpolitics-cd0a1e0a79b7.herokuapp.com/schoolShootings",
                         type: "GET",
@@ -100,6 +78,13 @@
                             let headers = rows[0];
                             rows = rows.slice(1);
                             let data = rows.map((row) => ({
+                                /*
+                                'Bill Name': row[0], 
+                                'Bill Status': row[1],
+                                'Issue': row[2],
+                                'Location': row[3],
+                                'Description': row[4] // Add the description field
+                                */
                                 'Date': row[0],
                                 'Location: Institution': row[1],
                                 'Case ID': row[2],
@@ -151,31 +136,87 @@
                                 '# Injured': row[48],	
                                 'Description': row[49],
                             }));
-
                             // Declare and initialise the table inside the success callback
                             let table = $('#table_id').DataTable({
+                                //responsive: true,
                                 data: data,
                                 pageLength: 25,
                                 columns: [
+                                    /*
+                                    {data: 'Bill Name'},
+                                    {data: 'Bill Status'},
+                                    {data: 'Issue'},
+                                    {data: 'Location'}
+                                    */
                                     {data: 'Date'},
                                     {data: 'Location: Institution'},
-                                    {data: 'Gender'},
+                                    //{data: 'Case ID'},
+                                    /*
+                                    {data: 'Time Started'},
+                                    {data: 'Time Ended'},
+                                    {data: 'Duration'},	
+                                    */
+                                    {data: 'Gender'},	
+                                    /*
+                                    {data: 'DOB'},	
+                                    {data: 'Alive'},	
+                                    {data: 'DOD'},	
+                                    {data: 'Age of Shooter'},	
+                                    */
                                     {data: 'Age At Shooting'},
-                                    {data: 'Race/Ethic Group of Shooter'},
+                                    /*
+                                    {data: 'Background'},
+                                    */
+                                    {data: 'Race/Ethic Group of Shooter'},	
+                                    //{data: 'Prior Criminal History'},
+                                    //{data: 'History of Violence/Threats'},
+                                    /*
+                                    {data: 'Additional Information'},
+                                    */
+                                    //{data: 'Attended School'},
+                                    //{data: 'Mental Health Issues'},
+                                    //{data: 'Motive'},
+                                    /*
+                                    {data: 'Outfit'},
+                                    {data: 'Obsession with Past Massacres'},
+                                    */
                                     {data: 'Military Status'},
+                                    /*
+                                    {data: 'Abused'},
+                                    {data: 'Adopted'},
+                                    {data: 'Parents Alive'},
+                                    {data: 'Parents Divorced'},
+                                    {data: 'Relationship Status'},
+                                    */
                                     {data: 'Shooting Outcome'},
+                                    /*
+                                    {data: 'Final Plea'},
+                                    {data: 'Status of Shooter'},
+                                    {data: 'Charges'},
+                                    {data: 'Verdict'},
+                                    {data: 'Sentence'},
+                                    {data: 'Manifesto/Note'},
+                                    */
                                     {data: 'Weapon Lawfully Obtained'},
                                     {data: 'Firearm Type'},
+                                    /*
+                                    {data: 'Firearm Brand'},
+                                    {data: 'Firearm Caliber'},
+                                    {data: 'Capacity'},
+                                    {data: 'Attachments/Alterations/Other Weapons'},
+                                    */
                                     {data: 'Location: State'},
                                     {data: 'Location: City'},
+                                    //{data: 'Location: Area'},
                                     {data: 'Education Level'},
+                                    //{data: 'Private or Public'},
+                                    
+                                    //{data: 'Victims'},
                                     {data: '# Killed'},
                                     {data: '# Injured'},
+                                ]
                                 ],
-                                order: [[0, 'desc']],
-                                    initComplete: function () {
-                                        this.api().columns.adjust().draw();
-                                },
+                                order: [[0, 'desc']]
                             });
 
                             $('#table_id tbody').on('click', 'tr', function () {
@@ -198,10 +239,6 @@
                                     tr.addClass('shown');
                                 }
                             });
-
-                            $('#table_id tbody').on('click', 'a', function(event) {
-                                event.stopPropagation();
-                            });
                         }
                     });
                 </script>
@@ -214,5 +251,4 @@
         </section>
         <!--#include virtual="footerTemplate.shtml" -->
     </body>
-
 </html>
