@@ -214,7 +214,6 @@
                                     //{data: 'Victims'},
                                     {data: '# Killed'},
                                     {data: '# Injured'},
-                                ]
                                 ],
                                 order: [[0, 'desc']]
                             });
