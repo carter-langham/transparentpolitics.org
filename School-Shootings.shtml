@@ -220,7 +220,8 @@
                                     //{data: 'Victims'},
                                     {data: '# Killed'},
                                     {data: '# Injured'},
-                                ]
+                                ],
+                                order: [[0, 'desc']]
                             });
                             
                             $('#table_id tbody').on('click', 'tr', function () {
