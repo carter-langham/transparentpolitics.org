@@ -101,14 +101,6 @@
                             let headers = rows[0];
                             rows = rows.slice(1);
                             let data = rows.map((row) => ({
-                                /*
-                                'Bill Name': row[0], 
-                                'Bill Status': row[1],
-                                'Issue': row[2],
-                                'Location': row[3],
-                                'Description': row[4] // Add the description field
-                                */
-
                                 'Date': row[0],
                                 'Location: Institution': row[1],
                                 'Case ID': row[2],
@@ -163,86 +155,28 @@
 
                             // Declare and initialise the table inside the success callback
                             let table = $('#table_id').DataTable({
-                                //responsive: true,
                                 data: data,
                                 pageLength: 25,
                                 columns: [
-                                    /*
-                                    {data: 'Bill Name'},
-                                    {data: 'Bill Status'},
-                                    {data: 'Issue'},
-                                    {data: 'Location'}
-                                    */
                                     {data: 'Date'},
                                     {data: 'Location: Institution'},
-                                    //{data: 'Case ID'},
-                                    /*
-                                    {data: 'Time Started'},
-                                    {data: 'Time Ended'},
-                                    {data: 'Duration'},	
-                                    */
-                                    {data: 'Gender'},	
-                                    /*
-                                    {data: 'DOB'},	
-                                    {data: 'Alive'},	
-                                    {data: 'DOD'},	
-                                    {data: 'Age of Shooter'},	
-                                    */
+                                    {data: 'Gender'},
                                     {data: 'Age At Shooting'},
-                                    /*
-                                    {data: 'Background'},
-                                    */
-                                    {data: 'Race/Ethic Group of Shooter'},	
-                                    //{data: 'Prior Criminal History'},
-                                    //{data: 'History of Violence/Threats'},
-                                    /*
-                                    {data: 'Additional Information'},
-                                    */
-                                    //{data: 'Attended School'},
-                                    //{data: 'Mental Health Issues'},
-                                    //{data: 'Motive'},
-                                    /*
-                                    {data: 'Outfit'},
-                                    {data: 'Obsession with Past Massacres'},
-                                    */
+                                    {data: 'Race/Ethic Group of Shooter'},
                                     {data: 'Military Status'},
-                                    /*
-                                    {data: 'Abused'},
-                                    {data: 'Adopted'},
-                                    {data: 'Parents Alive'},
-                                    {data: 'Parents Divorced'},
-                                    {data: 'Relationship Status'},
-                                    */
                                     {data: 'Shooting Outcome'},
-                                    /*
-                                    {data: 'Final Plea'},
-                                    {data: 'Status of Shooter'},
-                                    {data: 'Charges'},
-                                    {data: 'Verdict'},
-                                    {data: 'Sentence'},
-                                    {data: 'Manifesto/Note'},
-                                    */
                                     {data: 'Weapon Lawfully Obtained'},
                                     {data: 'Firearm Type'},
-                                    /*
-                                    {data: 'Firearm Brand'},
-                                    {data: 'Firearm Caliber'},
-                                    {data: 'Capacity'},
-                                    {data: 'Attachments/Alterations/Other Weapons'},
-                                    */
                                     {data: 'Location: State'},
                                     {data: 'Location: City'},
-                                    //{data: 'Location: Area'},
                                     {data: 'Education Level'},
-                                    //{data: 'Private or Public'},
-                                    
-                                    //{data: 'Victims'},
                                     {data: '# Killed'},
                                     {data: '# Injured'},
                                 ],
                                 order: [[0, 'desc']]
                             });
                             
+
                             $('#table_id tbody').on('click', 'tr', function () {
                                 var tr = $(this);
                                 var row = table.row(tr);
