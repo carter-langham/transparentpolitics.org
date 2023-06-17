@@ -71,9 +71,9 @@
                     //gives more info when clicking on entry
                     function formatDetails ( d ) {
                         return '<strong>Description:</strong><br>' + d.Description +
-                        '<br><strong>Case ID:</strong><br>' + d['Case ID'] +
-                        '<br><strong>Time Started:</strong><br>' + d['Time Started'] +
-                        '<br><strong>Time Ended:</strong><br>' + d['Time Ended'] +
+                        '<br><strong>Case ID:</strong><br>' + d.Description +
+                        '<br><strong>Time Started:</strong><br>' + d.Description;
+                        /*'<br><strong>Time Ended:</strong><br>' + d['Time Ended'] +
                         '<br><strong>Duration:</strong><br>' + d['Duration'] +
                         '<br><strong>Date of Birth:</strong><br>' + d['DOB'] +
                         '<br><strong>Alive:</strong><br>' + d['Alive'] +
@@ -89,7 +89,7 @@
                         '<br><strong>Military Status:</strong><br>' + d['Military Status'] +
                         '<br><strong>Status of Shooter:</strong><br>' + d['Status of Shooter'] +
                         '<br><strong>Manifesto/Note:</strong><br>' + d['Manifesto/Note'] +
-                        '<br><strong>Victims:</strong><br>' + d['Victims'];
+                        '<br><strong>Victims:</strong><br>' + d['Victims'];*/
                     }
 
                     $.ajax({
@@ -174,7 +174,7 @@
                                 ],
                                 order: [[0, 'desc']]
                             });
-                            
+                            table.columns.adjust().draw();
 
                             $('#table_id tbody').on('click', 'tr', function () {
                                 var tr = $(this);
@@ -198,7 +198,6 @@
                             });
                         }
                     });
-                    table.columns.adjust().draw();
                 </script>
                 <p id="data_information">
                     *This data is constantly being updated. Cases that are
