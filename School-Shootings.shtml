@@ -225,7 +225,7 @@
                                 ],
                                 order: [[0, 'desc']],
                                 columnDefs: [
-                                    { targets: [2, 5, 8, 12, 14, 17, 18, 22, 34, 50], visible: false, searchable: true}
+                                    { targets: [2, 5, 8, 12, 14, 17, 18, 22, 34, 50], visible: false, searchable: true},
                                 ]
                             });
 
