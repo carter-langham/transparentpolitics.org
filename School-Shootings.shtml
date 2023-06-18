@@ -136,7 +136,7 @@
                                 'Outfit': row[20],
                                 'Obsession with Past Massacres': row[21],	
                                 'Military Status': row[22],
-                                'Abused': row[23],
+                                //'Abused': row[23],
                                 //'Adopted': row[24],
                                 'Parents Alive': row[25],
                                 'Parents Divorced': row[26],
