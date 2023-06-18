@@ -94,14 +94,23 @@
                             let rows = response.values;
                             let headers = rows[0];
                             rows = rows.slice(1);
+                            let data = rows.map((row) => {
+                                let newRow = {};
+                                headers.forEach((header, index) => {
+                                    newRow[header] = row[index] ? row[index] : 'N/A';
+                                });
+                                return newRow;
+                            });
+                            
+                            /*
                             let data = rows.map((row) => ({
-                                /*
-                                'Bill Name': row[0], 
-                                'Bill Status': row[1],
-                                'Issue': row[2],
-                                'Location': row[3],
-                                'Description': row[4] // Add the description field
-                                */
+                                
+                                //'Bill Name': row[0], 
+                                //'Bill Status': row[1],
+                                //'Issue': row[2],
+                                //'Location': row[3],
+                                //'Description': row[4] // Add the description field
+                                
                                 'Date': row[0],
                                 'Location: Institution': row[1],
                                 'Case ID': row[2],
@@ -153,6 +162,7 @@
                                 '# Injured': row[48],	
                                 'Description': row[49],
                             }));
+                            */
                             // Declare and initialise the table inside the success callback
                             let table = $('#table_id').DataTable({
                                 //responsive: true,
