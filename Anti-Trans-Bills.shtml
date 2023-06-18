@@ -46,8 +46,10 @@
         <!-- The rest of your page's HTML content here -->
         <section class="table_section">
             <div>
-                <h2 id="page_subheading">Anti-Trans Legislation</h2>
-                <h3 id="more-info-hint">ⓘ Click on entry for more info.</h3>
+                <h2 id="page_subheading" style="margin-bottom: 2px">Anti-Trans
+                    Legislation</h2>
+                <h3 id="more-info-hint" style="margine-top: 2px">ⓘ Click on
+                    entry for more info.</h3>
                 <div style="overflow-x: auto; width: 100%;">
                     <table id="table_id" class="display">
                         <thead>

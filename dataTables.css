@@ -7,6 +7,11 @@ table.dataTable {
     border-spacing: 0
 }
 
+#more-info-hint {
+    padding-left: 2.6%;
+    font-size: medium;
+}
+
 .scrollable-table {
     overflow-x: auto !important;
     width: 100% !important;
