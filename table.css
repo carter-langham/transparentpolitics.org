@@ -3,7 +3,7 @@
 }
 
 
-#table_id .nested tr:hover {
+#table_id {
     background-color: white !important;
 
     #page_subheading {
@@ -22,12 +22,4 @@
         overflow-x: auto !important;
         width: 100% !important;
     }
-}
-
-#page_subheading {
-    padding-left: 2.5%
-}
-
-#data_information {
-    padding-left: 2.5%;
 }
