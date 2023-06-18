@@ -187,58 +187,58 @@
                                     {data: '# Killed', visible: true},	//47
 
 
-                                    //{data: 'Time Started'}, //3
-                                    //{data: 'Time Ended'}, //4
+                                    {data: 'Time Started', visible: false}, //3
+                                    {data: 'Time Ended', visible: false}, //4
                                     {data: 'Duration', visible: false},	//5
                                     {data: 'Alive', visible: false},	//8	
                                     {data: 'Background', visible: false}, //12
                                     {data: 'Case ID', visible: false}, //2 
                                     
                                     {data: 'Description', visible: false}, //49
-                                    //{data: 'DOB'}, //7	
+                                    {data: 'DOB', visible: false}, //7	
                                     
-                                    //{data: 'DOD'},	//9
-                                    //{data: 'Age of Shooter'},//10
+                                    {data: 'DOD', visible: false},	//9
+                                    {data: 'Age of Shooter', visible: false},//10
                                     
                                     
                                     
                                     {data: 'Prior Criminal History', visible: false},	//14
-                                    //{data: 'History of Violence/Threats'},	 //15
-                                    //{data: 'Additional Information'},	 //16
+                                    {data: 'History of Violence/Threats', visible: false},	 //15
+                                    {data: 'Additional Information', visible: false},	 //16
                                     {data: 'Attended School', visible: false}, //17
                                     {data: 'Mental Health Issues', visible: false},	//18
-                                    //{data: 'Motive'}, //19
-                                    //{data: 'Outfit'}, //20
-                                    //{data: 'Obsession with Past Massacres'},	//21
+                                    {data: 'Motive', visible: false}, //19
+                                    {data: 'Outfit', visible: false}, //20
+                                    {data: 'Obsession with Past Massacres', visible: false},	//21
                                     {data: 'Military Status', visible: false}, //22
                                     {data: 'Abused', visible: false}, //23
                                     {data: 'Adopted', visible: false}, //24
-                                    //{data: 'Parents Alive'},//25
-                                    //{data: 'Parents Divorced'},//26
-                                    //{data: 'Relationship Status'}, //27
+                                    {data: 'Parents Alive', visible: false},//25
+                                    {data: 'Parents Divorced', visible: false},//26
+                                    {data: 'Relationship Status', visible: false}, //27
                                     
-                                    //{data: 'Final Plea'}, //29
-                                    //{data: 'Status of Shooter'}, //30
-                                    //{data: 'Charges'}, //31
-                                    //{data: 'Verdict'}, //32
-                                    //{data: 'Sentence'}, //33
+                                    {data: 'Final Plea', visible: false}, //29
+                                    {data: 'Status of Shooter', visible: false}, //30
+                                    {data: 'Charges', visible: false}, //31
+                                    {data: 'Verdict', visible: false}, //32
+                                    {data: 'Sentence', visible: false}, //33
                                     {data: 'Manifesto/Note', visible: false},	//34
                                     
-                                    //{data: 'Firearm Brand'},	//37
-                                    //{data: 'Firearm Caliber'},	//38
-                                    //{data: 'Capacity'},	//39
-                                    //{data: 'Attachments/Alterations/Other Weapons'}, //40
+                                    {data: 'Firearm Brand', visible: false},	//37
+                                    {data: 'Firearm Caliber', visible: false},	//38
+                                    {data: 'Capacity', visible: false},	//39
+                                    {data: 'Attachments/Alterations/Other Weapons', visible: false}, //40
                                     
-                                    //{data: 'Location: Area'},	//43
+                                    {data: 'Location: Area', visible: false},	//43
                                     
-                                    //{data: 'Private or Public'},	//45
-                                    //{data: 'Victims'},	//46
+                                    {data: 'Private or Public', visible: false},	//45
+                                    {data: 'Victims', visible: false},	//46
                                     
                                     
                                 ],
                                 order: [[0, 'desc']],
                                 columnDefs: [
-                                    { targets: [2, 5, 8, 12, 14, 17, 18, 22, 23, 24, 34, 49], visible: false, searchable: true},
+                                    { targets: [2, 3, 4, 5, 7, 8, 9, 10, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, ,25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 37, 38, 39, 40, 43, 45, 46, 49], visible: false, searchable: true},
                                     {"defaultContent": "N/A", "targets": "_all"},
                                 ]
                             });
