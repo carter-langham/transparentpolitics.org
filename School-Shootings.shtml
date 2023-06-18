@@ -211,7 +211,7 @@
                                     {data: 'Firearm Type'},	
                                     //{data: 'Firearm Brand'},	
                                     //{data: 'Firearm Caliber'},	
-                                    {data: 'Capacity'},	
+                                    //{data: 'Capacity'},	
                                     //{data: 'Attachments/Alterations/Other Weapons'},
                                     {data: 'Location: State'},
                                     {data: 'Location: City'},
