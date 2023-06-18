@@ -68,15 +68,16 @@
                     // Function to format the details to be displayed when a row is clicked
                     function formatDetails ( d ) {
                         return '<strong>Description:</strong><br>' + d.Description + '<br>' +
-                        '<br><table style="width: 100%; table-layout: fixed;">'+
-                        '<tr>'+
-                        '<td><strong>Date of Birth:</strong><br>' + d['DOB'] + '</td>' +
+                        '<br><table style="width: 100%; table-layout: fixed;">' +'<tr>'+
                         '<td><strong>Case ID:</strong><br>' + d['Case ID'] + '</td>' +
-                        '</tr>'+
-                        '<tr>'+
-                        '<td><strong>Time Started:</strong><br>' + d['Time Started'] + '</td>' +
-                        '<td><strong>Time Ended:</strong><br>' + d['Time Ended'] + '</td>' +
-                        '</tr>'+
+                        '<td><strong>Duration:</strong><br>' + d.Duration  + '</td>' +
+                        '<td><strong>Alive:</strong><br>' + d.Alive + '</td>' + '</tr>' + '<tr>' +
+                        '<td><strong>Background:</strong><br>' + d.Background + '</td' +
+                        '<td><strong>Prior Criminal History:</strong><br>' + d['Prior Criminal History'] + '</td>' +
+                        '<td><Attended School:</strong><br>' + d['Attended School'] + '</td>' + '</tr>' + '<tr>' +
+                        '<td><strong>Mental Health Issues:</strong><br>' + d['Mental Health Issues'] + '</td>' +
+                        '<td><strong>Military Status</strong><br>' + d['Miltary Status'] + '</td>' +
+                        '<td><strong><Manifesto/Note:</strong><br>' + d['Manifesto/Note'] + '</td>' + '</tr>' +
                         // rest of the properties in similar fashion
                         '</table>';
                     }
