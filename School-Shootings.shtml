@@ -94,6 +94,7 @@
                             let rows = response.values;
                             let headers = rows[0];
                             rows = rows.slice(1);
+                            /*
                             let data = rows.map((row) => {
                                 let newRow = {};
                                 headers.forEach((header, index) => {
@@ -101,8 +102,9 @@
                                 });
                                 return newRow;
                             });
+                            */
                             
-                            /*
+                            
                             let data = rows.map((row) => ({
                                 
                                 //'Bill Name': row[0], 
@@ -135,7 +137,7 @@
                                 'Obsession with Past Massacres': row[21],	
                                 'Military Status': row[22],
                                 'Abused': row[23],
-                                'Adopted': row[24],
+                                //'Adopted': row[24],
                                 'Parents Alive': row[25],
                                 'Parents Divorced': row[26],
                                 'Relationship Status': row[27],
@@ -162,7 +164,7 @@
                                 '# Injured': row[48],	
                                 'Description': row[49],
                             }));
-                            */
+                            
                             // Declare and initialise the table inside the success callback
                             let table = $('#table_id').DataTable({
                                 //responsive: true,
