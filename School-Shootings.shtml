@@ -182,6 +182,9 @@
                                     {data: 'Firearm Type'},	//36
                                     {data: 'Location: State'}, //41
                                     {data: 'Location: City'}, //42
+                                    {data: 'Education Level'},	//44
+                                    {data: '# Injured'},	//48
+                                    {data: '# Killed'},	//47
 
 
                                     //{data: 'Time Started'}, //3
@@ -190,7 +193,7 @@
                                     {data: 'Alive'},	//8	
                                     {data: 'Background'}, //12
                                     {data: 'Case ID'}, //2 
-                                    {data: '# Injured'},	//48
+                                    
                                     {data: 'Description'}, //49
                                     //{data: 'DOB'}, //7	
                                     
@@ -227,10 +230,10 @@
                                     //{data: 'Attachments/Alterations/Other Weapons'}, //40
                                     
                                     //{data: 'Location: Area'},	//43
-                                    {data: 'Education Level'},	//44
+                                    
                                     //{data: 'Private or Public'},	//45
                                     //{data: 'Victims'},	//46
-                                    {data: '# Killed'},	//47
+                                    
                                     
                                 ],
                                 order: [[0, 'desc']],
