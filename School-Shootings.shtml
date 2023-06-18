@@ -52,9 +52,9 @@
                                 <th>Gender</th>
                                 <th>Age</th>
                                 <th>Race/Ethic Group</th>
-                                <th>Shooting Outcome</th>
-                                <th>Weapon Lawfully Obtained</th>
-                                <th>Firearm Type</th>
+                                <th>Outcome</th>
+                                <th>Legal Weapon</th>
+                                <th>Firearm</th>
                                 <th>State</th>
                                 <th>City</th>
                                 <th>Education Level</th>
