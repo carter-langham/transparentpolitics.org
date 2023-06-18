@@ -192,7 +192,7 @@
                                     {data: 'Duration', visible: false},	//5
                                     {data: 'Alive', visible: false},	//8	
                                     {data: 'Background', visible: false}, //12
-                                    {data: 'Case ID'}, //2 
+                                    {data: 'Case ID', visible: false}, //2 
                                     
                                     {data: 'Description', visible: false}, //49
                                     //{data: 'DOB'}, //7	
