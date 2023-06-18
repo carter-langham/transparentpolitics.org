@@ -120,7 +120,7 @@ table.dataTable.display tbody tr.odd.selected {
 
 table.dataTable.hover tbody tr:hover,
 table.dataTable.display tbody tr:hover {
-    background-color: #f6f6f6
+    background-color: white
 }
 
 table.dataTable.hover tbody tr:hover.selected,

@@ -2,19 +2,22 @@
     width: 90%;
 }
 
-#page_subheading {
-    padding-left: 2.5%;
-}
+#table_id .nested tr:hover {
+    background-color: white !important;
 
-#data_information {
-    padding-left: 2.5%;
-}
+    #page_subheading {
+        padding-left: 2.5%;
+    }
 
-#last_updated {
-    padding-left: 2.5%;
-}
+    #data_information {
+        padding-left: 2.5%;
+    }
 
-.scrollable-table {
-    overflow-x: auto !important;
-    width: 100% !important;
-}
+    #last_updated {
+        padding-left: 2.5%;
+    }
+
+    .scrollable-table {
+        overflow-x: auto !important;
+        width: 100% !important;
+    }
