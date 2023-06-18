@@ -157,6 +157,7 @@
                                 //responsive: true,
                                 data: data,
                                 pageLength: 25,
+                                searching: true,
                                 columns: [
                                     {data: 'Date'},
                                     {data: 'Location: Institution'},
