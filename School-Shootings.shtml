@@ -58,8 +58,8 @@
                                 <th>State</th>
                                 <th>City</th>
                                 <th>School Level</th>
-                                <th># Killed</th>
-                                <th># Injured</th>
+                                <th>Killed</th>
+                                <th>Injured</th>
                             </tr>
                         </thead>
                     </table>
