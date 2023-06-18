@@ -51,13 +51,13 @@
                                 <th>Institution</th>
                                 <th>Gender</th>
                                 <th>Age</th>
-                                <th>Race/Ethic Group</th>
+                                <th>Race/Ethnicity</th>
                                 <th>Outcome</th>
                                 <th>Legal Weapon</th>
                                 <th>Firearm</th>
                                 <th>State</th>
                                 <th>City</th>
-                                <th>Education Level</th>
+                                <th>School Level</th>
                                 <th># Killed</th>
                                 <th># Injured</th>
                             </tr>
