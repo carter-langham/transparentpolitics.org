@@ -174,18 +174,31 @@
                                 columns: [
                                     {data: 'Date'}, //0
                                     {data: 'Location: Institution'}, //1
-                                    {data: 'Case ID'}, //2 
+                                    {data: 'Gender'},//6
+                                    {data: 'Age At Shooting'}, //11
+                                    {data: 'Race/Ethic Group of Shooter'},	//13
+                                    {data: 'Weapon Lawfully Obtained'},	//35
+                                    {data: 'Shooting Outcome'}, //28
+                                    {data: 'Firearm Type'},	//36
+                                    {data: 'Location: State'}, //41
+                                    {data: 'Location: City'}, //42
+
+
                                     //{data: 'Time Started'}, //3
                                     //{data: 'Time Ended'}, //4
                                     {data: 'Duration'},	//5
-                                    {data: 'Gender'},	//6
+                                    {data: 'Alive'},	//8	
+                                    {data: 'Background'}, //12
+                                    {data: 'Case ID'}, //2 
+                                    {data: '# Injured'},	//48
+                                    {data: 'Description'}, //49
                                     //{data: 'DOB'}, //7	
-                                    {data: 'Alive'},	//8
+                                    
                                     //{data: 'DOD'},	//9
                                     //{data: 'Age of Shooter'},//10
-                                    {data: 'Age At Shooting'}, //11
-                                    {data: 'Background'}, //12
-                                    {data: 'Race/Ethic Group of Shooter'},	//13
+                                    
+                                    
+                                    
                                     {data: 'Prior Criminal History'},	//14
                                     //{data: 'History of Violence/Threats'},	 //15
                                     //{data: 'Additional Information'},	 //16
@@ -200,28 +213,25 @@
                                     //{data: 'Parents Alive'},//25
                                     //{data: 'Parents Divorced'},//26
                                     //{data: 'Relationship Status'}, //27
-                                    {data: 'Shooting Outcome'}, //28
+                                    
                                     //{data: 'Final Plea'}, //29
                                     //{data: 'Status of Shooter'}, //30
                                     //{data: 'Charges'}, //31
                                     //{data: 'Verdict'}, //32
                                     //{data: 'Sentence'}, //33
                                     {data: 'Manifesto/Note'},	//34
-                                    {data: 'Weapon Lawfully Obtained'},	//35
-                                    {data: 'Firearm Type'},	//36
+                                    
                                     //{data: 'Firearm Brand'},	//37
                                     //{data: 'Firearm Caliber'},	//38
                                     //{data: 'Capacity'},	//39
                                     //{data: 'Attachments/Alterations/Other Weapons'}, //40
-                                    {data: 'Location: State'}, //41
-                                    {data: 'Location: City'}, //42
+                                    
                                     //{data: 'Location: Area'},	//43
                                     {data: 'Education Level'},	//44
                                     //{data: 'Private or Public'},	//45
                                     //{data: 'Victims'},	//46
                                     {data: '# Killed'},	//47
-                                    {data: '# Injured'},	//48
-                                    {data: 'Description'}, //49
+                                    
                                 ],
                                 order: [[0, 'desc']],
                                 columnDefs: [
