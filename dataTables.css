@@ -236,6 +236,11 @@ table.dataTable.order-column.hover tbody tr:hover.selected>.sorting_3 {
     background-color: #a5b2cb
 }
 
+.nested tr:hover {
+    background-color: inherit !important;
+}
+
+
 table.dataTable.no-footer {
     border-bottom: 1px solid #111
 }
