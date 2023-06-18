@@ -172,19 +172,19 @@
                                 pageLength: 25,
                                 searching: true,
                                 columns: [
-                                    {data: 'Date'}, //0
-                                    {data: 'Location: Institution'}, //1
-                                    {data: 'Gender'},//6
-                                    {data: 'Age At Shooting'}, //11
-                                    {data: 'Race/Ethic Group of Shooter'},	//13
-                                    {data: 'Weapon Lawfully Obtained'},	//35
-                                    {data: 'Shooting Outcome'}, //28
-                                    {data: 'Firearm Type'},	//36
-                                    {data: 'Location: State'}, //41
-                                    {data: 'Location: City'}, //42
-                                    {data: 'Education Level'},	//44
-                                    {data: '# Injured'},	//48
-                                    {data: '# Killed'},	//47
+                                    {data: 'Date', visible: true}, //0
+                                    {data: 'Location: Institution', visible: true}, //1
+                                    {data: 'Gender', visible: true},//6
+                                    {data: 'Age At Shooting', visible: true}, //11
+                                    {data: 'Race/Ethic Group of Shooter', visible: true},	//13
+                                    {data: 'Weapon Lawfully Obtained', visible: true},	//35
+                                    {data: 'Shooting Outcome', visible: true}, //28
+                                    {data: 'Firearm Type', visible: true},	//36
+                                    {data: 'Location: State', visible: true}, //41
+                                    {data: 'Location: City', visible: true}, //42
+                                    {data: 'Education Level', visible: true},	//44
+                                    {data: '# Injured', visible: true},	//48
+                                    {data: '# Killed', visible: true},	//47
 
 
                                     //{data: 'Time Started'}, //3
