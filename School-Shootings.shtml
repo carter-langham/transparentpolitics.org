@@ -172,75 +172,71 @@
                                 pageLength: 25,
                                 searching: true,
                                 columns: [
-                                    {data: 'Date', visible: true}, //0
-                                    {data: 'Location: Institution', visible: true}, //1
-                                    {data: 'Gender', visible: true},//6
-                                    {data: 'Age At Shooting', visible: true}, //11
-                                    {data: 'Race/Ethic Group of Shooter', visible: true},	//13
-                                    {data: 'Weapon Lawfully Obtained', visible: true},	//35
-                                    {data: 'Shooting Outcome', visible: true}, //28
-                                    {data: 'Firearm Type', visible: true},	//36
-                                    {data: 'Location: State', visible: true}, //41
-                                    {data: 'Location: City', visible: true}, //42
-                                    {data: 'Education Level', visible: true},	//44
-                                    {data: '# Injured', visible: true},	//48
-                                    {data: '# Killed', visible: true},	//47
+                                    {data: 'Date', visible: true, searchable: true}, //0
+                                    {data: 'Location: Institution', visible: true, searchable: true}, //1
+                                    {data: 'Gender', visible: true, searchable: true},//6
+                                    {data: 'Age At Shooting', visible: true, searchable: true}, //11
+                                    {data: 'Race/Ethic Group of Shooter', visible: true, searchable: true},	//13
+                                    {data: 'Weapon Lawfully Obtained', visible: true, searchable: true},	//35
+                                    {data: 'Shooting Outcome', visible: true, searchable: true}, //28
+                                    {data: 'Firearm Type', visible: true, searchable: true},	//36
+                                    {data: 'Location: State', visible: true, searchable: true}, //41
+                                    {data: 'Location: City', visible: true, searchable: true}, //42
+                                    {data: 'Education Level', visible: true, searchable: true},	//44
+                                    {data: '# Injured', visible: true, searchable: true},	//48
+                                    {data: '# Killed', visible: true, searchable: true},	//47
 
 
-                                    {data: 'Time Started', visible: false}, //3
-                                    {data: 'Time Ended', visible: false}, //4
-                                    {data: 'Duration', visible: false},	//5
-                                    {data: 'Alive', visible: false},	//8	
-                                    {data: 'Background', visible: false}, //12
-                                    {data: 'Case ID', visible: false}, //2 
+                                    {data: 'Time Started', visible: false, searchable: false}, //3
+                                    {data: 'Time Ended', visible: false, searchable: false}, //4
+                                    {data: 'Duration', visible: false, searchable: true},	//5
+                                    {data: 'Alive', visible: false, searchable: true},	//8	
+                                    {data: 'Background', visible: false, searchable: true}, //12
+                                    {data: 'Case ID', visible: false, searchable: true}, //2 
                                     
-                                    {data: 'Description', visible: false}, //49
-                                    {data: 'DOB', visible: false}, //7	
+                                    {data: 'Description', visible: false, searchable: true}, //49
+                                    {data: 'DOB', visible: false, searchable: false}, //7	
                                     
-                                    {data: 'DOD', visible: false},	//9
-                                    {data: 'Age of Shooter', visible: false},//10
+                                    {data: 'DOD', visible: false, searchable: false},	//9
+                                    {data: 'Age of Shooter', visible: false, searchable: false},//10
                                     
                                     
                                     
-                                    {data: 'Prior Criminal History', visible: false},	//14
-                                    {data: 'History of Violence/Threats', visible: false},	 //15
-                                    {data: 'Additional Information', visible: false},	 //16
-                                    {data: 'Attended School', visible: false}, //17
-                                    {data: 'Mental Health Issues', visible: false},	//18
-                                    {data: 'Motive', visible: false}, //19
-                                    {data: 'Outfit', visible: false}, //20
-                                    {data: 'Obsession with Past Massacres', visible: false},	//21
-                                    {data: 'Military Status', visible: false}, //22
-                                    {data: 'Abused', visible: false}, //23
-                                    {data: 'Adopted', visible: false}, //24
-                                    {data: 'Parents Alive', visible: false},//25
-                                    {data: 'Parents Divorced', visible: false},//26
-                                    {data: 'Relationship Status', visible: false}, //27
+                                    {data: 'Prior Criminal History', visible: false, searchable: true},	//14
+                                    {data: 'History of Violence/Threats', visible: false, searchable: false},	 //15
+                                    {data: 'Additional Information', visible: false, searchable: false},	 //16
+                                    {data: 'Attended School', visible: false, searchable: true}, //17
+                                    {data: 'Mental Health Issues', visible: false, searchable: true},	//18
+                                    {data: 'Motive', visible: false, searchable: false}, //19
+                                    {data: 'Outfit', visible: false, searchable: false}, //20
+                                    {data: 'Obsession with Past Massacres', visible: false, searchable: false},	//21
+                                    {data: 'Military Status', visible: false, searchable: true}, //22
+                                    {data: 'Abused', visible: false, searchable: false}, //23
+                                    {data: 'Adopted', visible: false, searchable: false}, //24
+                                    {data: 'Parents Alive', visible: false, searchable: false},//25
+                                    {data: 'Parents Divorced', visible: false, searchable: false},//26
+                                    {data: 'Relationship Status', visible: false, searchable: false}, //27
                                     
-                                    {data: 'Final Plea', visible: false}, //29
-                                    {data: 'Status of Shooter', visible: false}, //30
-                                    {data: 'Charges', visible: false}, //31
-                                    {data: 'Verdict', visible: false}, //32
-                                    {data: 'Sentence', visible: false}, //33
-                                    {data: 'Manifesto/Note', visible: false},	//34
+                                    {data: 'Final Plea', visible: false, searchable: false}, //29
+                                    {data: 'Status of Shooter', visible: false, searchable: false}, //30
+                                    {data: 'Charges', visible: false, searchable: false}, //31
+                                    {data: 'Verdict', visible: false, searchable: false}, //32
+                                    {data: 'Sentence', visible: false, searchable: false}, //33
+                                    {data: 'Manifesto/Note', visible: false, searchable: true},	//34
                                     
-                                    {data: 'Firearm Brand', visible: false},	//37
-                                    {data: 'Firearm Caliber', visible: false},	//38
-                                    {data: 'Capacity', visible: false},	//39
-                                    {data: 'Attachments/Alterations/Other Weapons', visible: false}, //40
+                                    {data: 'Firearm Brand', visible: false, searchable: false},	//37
+                                    {data: 'Firearm Caliber', visible: false, searchable: false},	//38
+                                    {data: 'Capacity', visible: false, searchable: false},	//39
+                                    {data: 'Attachments/Alterations/Other Weapons', visible: false, searchable: false}, //40
                                     
-                                    {data: 'Location: Area', visible: false},	//43
+                                    {data: 'Location: Area', visible: false, searchable: false},	//43
                                     
-                                    {data: 'Private or Public', visible: false},	//45
-                                    {data: 'Victims', visible: false},	//46
+                                    {data: 'Private or Public', visible: false, searchable: false},	//45
+                                    {data: 'Victims', visible: false, searchable: false},	//46
                                     
                                     
                                 ],
-                                order: [[0, 'desc']],
-                                columnDefs: [
-                                    { targets: [2, 3, 4, 5, 7, 8, 9, 10, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, ,25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 37, 38, 39, 40, 43, 45, 46, 49], visible: false, searchable: true},
-                                    {"defaultContent": "N/A", "targets": "_all"},
-                                ]
+                                order: [[0, 'desc']]
                             });
 
                             $('#table_id tbody').on('click', 'tr', function () {
