@@ -48,7 +48,8 @@
             <div>
                 <h2 id="page_subheading" style="margin-bottom: 2px">Anti-Trans
                     Legislation</h2>
-                <h3 id="more-info-hint" style="margine-top: 2px">ⓘ Click on
+                <h3 id="more-info-hint"
+                    style="margin-top: 2px; font-weight: 100">ⓘ Click on
                     entry for more info.</h3>
                 <div style="overflow-x: auto; width: 100%;">
                     <table id="table_id" class="display">
