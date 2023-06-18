@@ -189,12 +189,12 @@
 
                                     //{data: 'Time Started'}, //3
                                     //{data: 'Time Ended'}, //4
-                                    {data: 'Duration'},	//5
-                                    {data: 'Alive'},	//8	
-                                    {data: 'Background'}, //12
+                                    {data: 'Duration', visible: false},	//5
+                                    {data: 'Alive', visible: false},	//8	
+                                    {data: 'Background', visible: false}, //12
                                     {data: 'Case ID'}, //2 
                                     
-                                    {data: 'Description'}, //49
+                                    {data: 'Description', visible: false}, //49
                                     //{data: 'DOB'}, //7	
                                     
                                     //{data: 'DOD'},	//9
@@ -202,15 +202,15 @@
                                     
                                     
                                     
-                                    {data: 'Prior Criminal History'},	//14
+                                    {data: 'Prior Criminal History', visible: false},	//14
                                     //{data: 'History of Violence/Threats'},	 //15
                                     //{data: 'Additional Information'},	 //16
-                                    {data: 'Attended School'}, //17
-                                    {data: 'Mental Health Issues'},	//18
+                                    {data: 'Attended School', visible: false}, //17
+                                    {data: 'Mental Health Issues', visible: false},	//18
                                     //{data: 'Motive'}, //19
                                     //{data: 'Outfit'}, //20
                                     //{data: 'Obsession with Past Massacres'},	//21
-                                    {data: 'Military Status'}, //22
+                                    {data: 'Military Status', visible: false}, //22
                                     //{data: 'Abused'}, //23
                                     //{data: 'Adopted'}, //24
                                     //{data: 'Parents Alive'},//25
@@ -222,7 +222,7 @@
                                     //{data: 'Charges'}, //31
                                     //{data: 'Verdict'}, //32
                                     //{data: 'Sentence'}, //33
-                                    {data: 'Manifesto/Note'},	//34
+                                    {data: 'Manifesto/Note', visible: false},	//34
                                     
                                     //{data: 'Firearm Brand'},	//37
                                     //{data: 'Firearm Caliber'},	//38
