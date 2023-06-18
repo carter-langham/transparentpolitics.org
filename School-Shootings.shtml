@@ -68,8 +68,17 @@
                     // Function to format the details to be displayed when a row is clicked
                     function formatDetails ( d ) {
                         return '<strong>Description:</strong><br>' + d.Description + '<br>' +
-                        '<br><strong>Case ID:</strong><br>' + d['Case ID'] + '<br>' +
-                        '<br><strong>Duration:</strong><br>' + d.Duration + '<br.';
+                        '<br><table style="width: 100%; table-layout: fixed;">'+
+                        '<tr>'+
+                        '<td><strong>Date of Birth:</strong><br>' + d['DOB'] + '</td>' +
+                        '<td><strong>Case ID:</strong><br>' + d['Case ID'] + '</td>' +
+                        '</tr>'+
+                        '<tr>'+
+                        '<td><strong>Time Started:</strong><br>' + d['Time Started'] + '</td>' +
+                        '<td><strong>Time Ended:</strong><br>' + d['Time Ended'] + '</td>' +
+                        '</tr>'+
+                        // rest of the properties in similar fashion
+                        '</table>';
                     }
                     $.ajax({
                         url: "https://transparentpolitics-cd0a1e0a79b7.herokuapp.com/schoolShootings",
