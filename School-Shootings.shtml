@@ -172,60 +172,60 @@
                                 pageLength: 25,
                                 searching: true,
                                 columns: [
-                                    {data: 'Date'},
-                                    {data: 'Location: Institution'}, 
+                                    {data: 'Date'}, //0
+                                    {data: 'Location: Institution'}, //1
                                     {data: 'Case ID'}, //2 
-                                    //{data: 'Time Started'}, 
-                                    //{data: 'Time Ended'},
+                                    //{data: 'Time Started'}, //3
+                                    //{data: 'Time Ended'}, //4
                                     {data: 'Duration'},	//5
-                                    {data: 'Gender'},	
-                                    //{data: 'DOB'},	
+                                    {data: 'Gender'},	//6
+                                    //{data: 'DOB'}, //7	
                                     {data: 'Alive'},	//8
-                                    //{data: 'DOD'},	
-                                    //{data: 'Age of Shooter'},
-                                    {data: 'Age At Shooting'}, 
+                                    //{data: 'DOD'},	//9
+                                    //{data: 'Age of Shooter'},//10
+                                    {data: 'Age At Shooting'}, //11
                                     {data: 'Background'}, //12
-                                    {data: 'Race/Ethic Group of Shooter'},	
+                                    {data: 'Race/Ethic Group of Shooter'},	//13
                                     {data: 'Prior Criminal History'},	//14
-                                    //{data: 'History of Violence/Threats'},	 
-                                    //{data: 'Additional Information'},	
+                                    //{data: 'History of Violence/Threats'},	 //15
+                                    //{data: 'Additional Information'},	 //16
                                     {data: 'Attended School'}, //17
                                     {data: 'Mental Health Issues'},	//18
-                                    //{data: 'Motive'}, 
-                                    //{data: 'Outfit'},
-                                    //{data: 'Obsession with Past Massacres'},	
+                                    //{data: 'Motive'}, //19
+                                    //{data: 'Outfit'}, //20
+                                    //{data: 'Obsession with Past Massacres'},	//21
                                     {data: 'Military Status'}, //22
-                                    //{data: 'Abused'},
-                                    //{data: 'Adopted'},
-                                    //{data: 'Parents Alive'},
-                                    //{data: 'Parents Divorced'},
-                                    //{data: 'Relationship Status'},
-                                    {data: 'Shooting Outcome'}, 
-                                    //{data: 'Final Plea'},
-                                    //{data: 'Status of Shooter'}, 
-                                    //{data: 'Charges'},	
-                                    //{data: 'Verdict'},	
-                                    //{data: 'Sentence'},	
+                                    //{data: 'Abused'}, //23
+                                    //{data: 'Adopted'}, //24
+                                    //{data: 'Parents Alive'},//25
+                                    //{data: 'Parents Divorced'},//26
+                                    //{data: 'Relationship Status'}, //27
+                                    {data: 'Shooting Outcome'}, //28
+                                    //{data: 'Final Plea'}, //29
+                                    //{data: 'Status of Shooter'}, //30
+                                    //{data: 'Charges'}, //31
+                                    //{data: 'Verdict'}, //32
+                                    //{data: 'Sentence'}, //33
                                     {data: 'Manifesto/Note'},	//34
-                                    {data: 'Weapon Lawfully Obtained'},	
-                                    {data: 'Firearm Type'},	
-                                    //{data: 'Firearm Brand'},	
-                                    //{data: 'Firearm Caliber'},	
-                                    //{data: 'Capacity'},	
-                                    //{data: 'Attachments/Alterations/Other Weapons'},
-                                    {data: 'Location: State'},
-                                    {data: 'Location: City'},
-                                    //{data: 'Location: Area'},	
-                                    {data: 'Education Level'},	
-                                    //{data: 'Private or Public'},	
-                                    //{data: 'Victims'},	
-                                    {data: '# Killed'},	
-                                    {data: '# Injured'},	
-                                    {data: 'Description'}, //50
+                                    {data: 'Weapon Lawfully Obtained'},	//35
+                                    {data: 'Firearm Type'},	//36
+                                    //{data: 'Firearm Brand'},	//37
+                                    //{data: 'Firearm Caliber'},	//38
+                                    //{data: 'Capacity'},	//39
+                                    //{data: 'Attachments/Alterations/Other Weapons'}, //40
+                                    {data: 'Location: State'}, //41
+                                    {data: 'Location: City'}, //42
+                                    //{data: 'Location: Area'},	//43
+                                    {data: 'Education Level'},	//44
+                                    //{data: 'Private or Public'},	//45
+                                    //{data: 'Victims'},	//46
+                                    {data: '# Killed'},	//47
+                                    {data: '# Injured'},	//48
+                                    {data: 'Description'}, //49
                                 ],
                                 order: [[0, 'desc']],
                                 columnDefs: [
-                                    { targets: [2, 5, 8, 12, 14, 17, 18, 22, 34, 50], visible: false, searchable: true},
+                                    { targets: [2, 5, 8, 12, 14, 17, 18, 22, 34, 49], visible: false, searchable: true},
                                     {"defaultContent": "N/A", "targets": "_all"},
                                 ]
                             });
