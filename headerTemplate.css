@@ -1,21 +1,23 @@
-
-
-body{
-    background-color:#ededed;
+body {
+    background-color: #ededed;
     margin: 0;
     padding: 0;
     font-family: "Josefin Sans", sans-serif;
 }
 
+#last_updated {
+    padding-left: 2.5%;
+}
+
 /* THIS IS ALL HEADER STUFF*/
-header{
+header {
     position: relative;
     top: 0;
     width: 100%;
-        z-index: 10;
+    z-index: 10;
 }
 
-.header-content{
+.header-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,12 +28,12 @@ header{
     padding: 10px
 }
 
-.title-logo{
+.title-logo {
     display: flex;
     aligh-items: center;
 }
 
-#header-image{
+#header-image {
     margin: 0;
     max-width: 80px;
     min-width: 80px;
@@ -40,10 +42,10 @@ header{
     object-fit: contain;
 }
 
-#header-text{
+#header-text {
     margin: 0;
     margin-top: 20px;
-    color:#ededed;
+    color: #ededed;
     text-decoration: none;
     padding-left: 5px;
 }
@@ -51,8 +53,9 @@ header{
 #header-link {
     text-decoration: none;
 }
-ul{
-    display:flex;
+
+ul {
+    display: flex;
 }
 
 #menu-bar ul {
@@ -63,29 +66,30 @@ ul{
     align-items: center;
 }
 
-#menu-bar ul li a{
+#menu-bar ul li a {
     padding: 2vw;
-    color:#ededed;
-    text-decoration:none;
+    color: #ededed;
+    text-decoration: none;
     font-weight: 50;
     overflow: hidden;
     white-space: nowrap;
     font-size: 20px;
 }
 
-#menu-bar ul li a:hover{
-    text-decoration:underline;
+#menu-bar ul li a:hover {
+    text-decoration: underline;
 }
 
 
 
-@media only screen and (max-width: 1450px){
-    .header-content{
+@media only screen and (max-width: 1450px) {
+    .header-content {
         flex-direction: column;
         align-items: center;
 
     }
-    #menu-bar ul li a{
+
+    #menu-bar ul li a {
         justify-content: center;
         align-items: center;
     }
@@ -93,21 +97,20 @@ ul{
 
 
 @media only screen and (max-width: 1100px) {
-    .header-content{
+    .header-content {
         flex-direction: column;
         align-items: flex-start;
     }
-    #header-text{
+
+    #header-text {
         margin-top: 3vh;
     }
 
     #menu-bar {
-      display: none;
+        display: none;
     }
 
-  }
+}
 
 
-  /*MENU BUTTON*/
-
-  
+/*MENU BUTTON*/
