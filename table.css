@@ -2,6 +2,7 @@
     width: 90%;
 }
 
+
 #table_id .nested tr:hover {
     background-color: white !important;
 
@@ -21,3 +22,8 @@
         overflow-x: auto !important;
         width: 100% !important;
     }
+}
+
+#page_subheading {
+    padding-left: 2.5%
+}
