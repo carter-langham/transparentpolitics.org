@@ -212,7 +212,7 @@
                                     //{data: 'Obsession with Past Massacres'},	//21
                                     {data: 'Military Status', visible: false}, //22
                                     {data: 'Abused', visible: false}, //23
-                                    //{data: 'Adopted'}, //24
+                                    {data: 'Adopted', visible: false}, //24
                                     //{data: 'Parents Alive'},//25
                                     //{data: 'Parents Divorced'},//26
                                     //{data: 'Relationship Status'}, //27
@@ -238,7 +238,7 @@
                                 ],
                                 order: [[0, 'desc']],
                                 columnDefs: [
-                                    { targets: [2, 5, 8, 12, 14, 17, 18, 22, 23, 34, 49], visible: false, searchable: true},
+                                    { targets: [2, 5, 8, 12, 14, 17, 18, 22, 23, 24, 34, 49], visible: false, searchable: true},
                                     {"defaultContent": "N/A", "targets": "_all"},
                                 ]
                             });
