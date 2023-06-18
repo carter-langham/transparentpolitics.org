@@ -6,6 +6,10 @@
   padding-left: 2.5%
 }
 
+#data_information {
+  padding-left: 2.5%;
+}
+
 @media only screen and (min-width: 1099px) {
   .menu__btn {
     display: none;
