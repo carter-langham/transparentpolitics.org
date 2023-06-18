@@ -160,20 +160,60 @@
                                 searching: true,
                                 columns: [
                                     {data: 'Date'},
-                                    {data: 'Location: Institution'},
+                                    {data: 'Location: Institution'}, 
+                                    {data: 'Case ID'}, //2 
+                                    //{data: 'Time Started'}, 
+                                    //{data: 'Time Ended'},
+                                    {data: 'Duration'},	//5
                                     {data: 'Gender'},	
-                                    {data: 'Age At Shooting'},
+                                    //{data: 'DOB'},	
+                                    {data: 'Alive'},	//8
+                                    //{data: 'DOD'},	
+                                    //{data: 'Age of Shooter'},
+                                    {data: 'Age At Shooting'}, 
+                                    {data: 'Background'}, //12
                                     {data: 'Race/Ethic Group of Shooter'},	
-                                    {data: 'Shooting Outcome'},
-                                    {data: 'Weapon Lawfully Obtained'},
-                                    {data: 'Firearm Type'},
+                                    {data: 'Prior Criminal History'},	//14
+                                    //{data: 'History of Violence/Threats'},	 
+                                    //{data: 'Additional Information'},	
+                                    {data: 'Attended School'}, //17
+                                    {data: 'Mental Health Issues'},	//18
+                                    //{data: 'Motive'}, 
+                                    //{data: 'Outfit'},
+                                    //{data: 'Obsession with Past Massacres'},	
+                                    {data: 'Military Status'}, //22
+                                    //{data: 'Abused'},
+                                    //{data: 'Adopted'},
+                                    //{data: 'Parents Alive'},
+                                    //{data: 'Parents Divorced'},
+                                    //{data: 'Relationship Status'},
+                                    {data: 'Shooting Outcome'}, 
+                                    //{data: 'Final Plea'},
+                                    //{data: 'Status of Shooter'}, 
+                                    //{data: 'Charges'},	
+                                    //{data: 'Verdict'},	
+                                    //{data: 'Sentence'},	
+                                    {data: 'Manifesto/Note'},	//34
+                                    {data: 'Weapon Lawfully Obtained'},	
+                                    {data: 'Firearm Type'},	
+                                    //{data: 'Firearm Brand'},	
+                                    //{data: 'Firearm Caliber'},	
+                                    {data: 'Capacity'},	
+                                    //{data: 'Attachments/Alterations/Other Weapons'},
                                     {data: 'Location: State'},
                                     {data: 'Location: City'},
-                                    {data: 'Education Level'},
-                                    {data: '# Killed'},
-                                    {data: '# Injured'},
+                                    //{data: 'Location: Area'},	
+                                    {data: 'Education Level'},	
+                                    //{data: 'Private or Public'},	
+                                    //{data: 'Victims'},	
+                                    {data: '# Killed'},	
+                                    {data: '# Injured'},	
+                                    {data: 'Description'}, //50
                                 ],
-                                order: [[0, 'desc']]
+                                order: [[0, 'desc']],
+                                columnDefs: [
+                                    { targets: [2, 5, 8, 12, 14, 17, 18, 22, 34, 50], searchable: false }
+                                ]
                             });
 
                             $('#table_id tbody').on('click', 'tr', function () {
