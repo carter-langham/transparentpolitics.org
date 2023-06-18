@@ -90,6 +90,7 @@
                         url: "https://transparentpolitics-cd0a1e0a79b7.herokuapp.com/schoolShootings",
                         type: "GET",
                         success: function(response) {
+                            console.log(response);
                             let rows = response.values;
                             let headers = rows[0];
                             rows = rows.slice(1);
