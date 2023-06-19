@@ -17,6 +17,9 @@
                 <li><a href="Anti-Trans-Bills.shtml">Anti-Trans
                         Legislation</a></li>
                 <li><a href="School-Shootings.shtml">School Shootings</a></li>
+                <ul>
+                    <li><a href="#">Suboption 1</a></li>
+                </ul>
                 <li><a href="Assault-Cases.shtml">Harassment
                         and Assault Cases</a></li>
                 <li><a href="Congress-Donations.shtml">Congressional Donations</a></li>
@@ -24,3 +27,4 @@
         </div>
     </div>
 </header>
+<script src="script.js"></script>
