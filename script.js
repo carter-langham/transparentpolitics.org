@@ -12,20 +12,13 @@ document.querySelector('#menu-bar').addEventListener('mouseleave', function () {
     hideMenu();
 });
 
-document.querySelectorAll('#menu-bar ul li').forEach(function (menuItem) {
+document.querySelectorAll('#menu-bar ul > li').forEach(function (menuItem) {
     menuItem.addEventListener('mouseenter', function () {
         clearTimeout(menuTimeout);
+        menuItem.querySelector('ul').style.display = 'block';
     });
 
-    if (menuItem.querySelector('ul')) {
-        var submenu = menuItem.querySelector('ul');
-
-        menuItem.addEventListener('mouseenter', function () {
-            submenu.style.display = 'block';
-        });
-
-        menuItem.addEventListener('mouseleave', function () {
-            submenu.style.display = 'none';
-        });
-    }
+    menuItem.addEventListener('mouseleave', function () {
+        hideMenu();
+    });
 });
