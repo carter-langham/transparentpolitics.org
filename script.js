@@ -16,4 +16,16 @@ document.querySelectorAll('header nav ul li').forEach(function (menuItem) {
     menuItem.addEventListener('mouseenter', function () {
         clearTimeout(menuTimeout);
     });
+
+    if (menuItem.querySelector('ul')) {
+        var submenu = menuItem.querySelector('ul');
+
+        menuItem.addEventListener('mouseenter', function () {
+            submenu.style.display = 'block';
+        });
+
+        menuItem.addEventListener('mouseleave', function () {
+            submenu.style.display = 'none';
+        });
+    }
 });
