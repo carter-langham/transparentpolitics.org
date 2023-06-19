@@ -1,6 +1,7 @@
-<header>
+ <header>
     <div class="header-content">
         <div class="title-logo">
+
             <a href="home.shtml">
                 <img id="header-image" src="transparentpolitics.png"
                     alt="Transparent Politics Logo">
@@ -8,20 +9,18 @@
             <a id="header-link" href="home.shtml">
                 <h1 id="header-text">Transparent<br>Politics</h1>
             </a>
+
         </div>
         <div id="menu-bar">
             <ul>
                 <li><a href="home.shtml">Home</a></li>
-                <li><a href="Anti-Trans-Bills.shtml">Anti-Trans Legislation</a></li>
-                <li><a href="School-Shootings.shtml">School Shootings</a>
-                    <ul>
-                        <li><a href="#">Suboption 1</a></li>
-                    </ul>
-                </li>
-                <li><a href="Assault-Cases.shtml">Harassment and Assault Cases</a></li>
+                <li><a href="Anti-Trans-Bills.shtml">Anti-Trans
+                        Legislation</a></li>
+                <li><a href="School-Shootings.shtml">School Shootings</a></li>
+                <li><a href="Assault-Cases.shtml">Harassment
+                        and Assault Cases</a></li>
                 <li><a href="Congress-Donations.shtml">Congressional Donations</a></li>
             </ul>
         </div>
     </div>
 </header>
-<script src="script.js"></script>
