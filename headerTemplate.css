@@ -5,6 +5,10 @@ body {
     font-family: "Josefin Sans", sans-serif;
 }
 
+p {
+    padding-left: 2.5%;
+}
+
 #last_updated {
     padding-left: 2.5%;
 }
