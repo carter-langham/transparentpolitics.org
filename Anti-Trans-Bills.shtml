@@ -134,8 +134,8 @@
                 <p id="last_updated">ⓘ Last updated Thursday, June 15th, 5:06 AM
                     EST. This data is constantly being updated. Cases that are<br>
                     completed and audited will be marked with the ⋆ character.</p>
-                <p>Powered by <a>href="https://legiscan.com/legiscan">Legiscan
-                        API</a></p>
+                <p>Powered by
+                    <a href="https://legiscan.com/legiscan">Legiscan API</a></p>
             </div>
         </section>
         <!--#include virtual="footerTemplate.shtml" -->
