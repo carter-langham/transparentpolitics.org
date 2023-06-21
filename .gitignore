@@ -2,3 +2,9 @@ archived/
 **/archived/
 **/test/
 test/
+test/__MACOSX
+*test/__MACOSX
+/test/__MACOSX
+*/test/__MACOSX
+testing.html
+testing.css
